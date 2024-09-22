@@ -1,0 +1,60 @@
+:root {
+    --main-font: "IBM Plex Sans";
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: rgb(63, 24, 65);
+}
+header {
+    position: sticky;
+    top: 0;
+    width: 100vw;
+    height: 64px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.burger-menu {
+    width: 23px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.search-bar {
+    flex: 1;
+    max-width: 500px;
+    min-width: 0;
+    margin-left: 20px;
+    margin-right: 20px;
+    height: 40px;
+    background-color: rgb(29, 29, 29);
+    border-style: solid;
+    border-color: rgba(255, 255, 255, 0.253);
+    border-width: 1px;
+    border-radius: 7px;
+    color:white;
+    font-family: var(--main-font);
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 16px;
+}
+.search-bar:focus {
+    outline: none;
+    background-color: rgb(17, 17, 17);
+}
+
+.search-bar::placeholder {
+    color: white;
+    font-family: var(--main-font);
+}
+.profile-avatar {
+    width: 25px;
+    border-radius: 50%;
+    margin-right: 70px;
+}
