@@ -9,7 +9,7 @@
 }
 
 body{
-    background-color: rgb(131, 72, 72); 
+    background-color:black; 
 }
 header {
     position: sticky;
@@ -20,6 +20,11 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+a {
+    text-decoration: none;
+    color: white;
+    font-family: var(--main-font);
 }
 .top-bar {
     border-bottom: 1px solid var(--border-color);
@@ -67,13 +72,14 @@ header {
     color: white;
     border-right: 1px solid var(--border-color); 
     position: fixed;
+    height: 100vh;
 }
 .nav-item > a {
     display: flex;
     align-items: center;
     color: white;
     font-family: var(--main-font);
-    margin: 10px;
+    margin: 0 10px;
     text-decoration: none;
     border-radius: 8px;
 }
@@ -110,10 +116,11 @@ hr {
     border-radius: 23px;
     display: flex;
     margin: auto;
-    padding: 8px 30px;
+    padding: 8px 45px;
     font-weight: normal;
     justify-content: center;
     align-items: center;
+    margin-bottom: 20px;
 }
 .new-playlist > p {
     font-size: 15px;
@@ -123,3 +130,25 @@ hr {
     margin-right: 10px;
 }
 
+.playlist {
+    list-style-type: none;
+}
+
+.playlist-item {
+    font-size: 13px;
+    margin: 0 10px;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+.playlist-item:hover {
+    background-color: var(--border-color);
+}
+footer {
+    /* border: 2px solid red; */
+    position: fixed;
+    width: 100vw;
+    bottom: 0;
+    height: 72px;
+    background: linear-gradient(to bottom, #202020, #272727, #202020);
+    display: flex; 
+}
