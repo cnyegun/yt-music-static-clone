@@ -6,6 +6,7 @@
 * {
     margin: 0;
     padding: 0;
+    color: white;
 }
 
 body{
@@ -195,4 +196,29 @@ footer {
 .is-playing > * {
     margin-left: 10px;
     margin-right: 10px;
+}
+
+main {
+    width: 1280px;
+    min-width: 980px;
+    margin: auto;
+    display: flex;
+}
+
+.recommended-tag {
+    display: flex;
+    align-items: center;
+}
+.recommended-tag > a {
+    padding: 8px;
+    background-color: rgb(39, 39, 39);
+    border-radius: 5px;
+    font-size: 15px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+.listen-again {
+
 }
