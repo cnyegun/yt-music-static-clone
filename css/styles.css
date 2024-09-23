@@ -175,6 +175,24 @@ footer {
     margin-right: 15px;
 }
 .is-playing {
-    border: 1px solid red;
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.song-info> p {
+    color: rgb(209, 209, 209);
+}
+.playing-cover {
+    width: 40px;
+    height: 40px;
+}
+
+.song-info {
+    color: white;
+    font-family: "Roboto";
+    font-size: 15px;
+}
+.is-playing > * {
+    margin-left: 10px;
+    margin-right: 10px;
 }
